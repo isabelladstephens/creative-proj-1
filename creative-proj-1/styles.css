@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+    justify-content: center;
+}
+
+.free-shipping {
+    background-color: #f8f2e1;
+    width:100%;
+    color: #191302;
+    height: 40px !important;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+/* Base Styles */
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f8f2e1;
+  justify-content: center;
+}
+
+.section {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-large {
+  height: 80%;
+  padding:40px;
+}
+
+.empty {
+  height: 200px;
+}
+
+.footer {
+  height:50px;
+  justify-content: center;
+  background-color: #c49a10;
+  color: #f8f2e1;
+}
+
+.feature-1 {
+  height: auto;
+}
+
+.feature-2 {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #f6da92;
+  justify-content: center;
+  align-content: center;
+}
+
+.feature-3 {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 30px;
+  align-content: flex-start;
+}
+
+.content {
+  height: 250px;
+}
+
+.about {
+  height: auto;
+  width: 70%;
+}
+
+.left-align {
+  justify-content: flex-start;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.item-display {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  margin: 15px;
+}
+
+.paragraph-large {
+  display:flex;
+  flex-direction: column;
+  font-size: 2.5em;
+  font-weight: bold;
+  font-style: oblique;
+  padding: 30px;
+  justify-content: center;
+  text-align: center;
+  color: #191302;
+}
+
+.paragraph-med {
+  display:flex;
+  font-size: 1.5em;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+  color: #191302;
+  margin-bottom: 40px;
+}
+
+.item-detail {
+  font-size: 1.2em;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: left;
+  color: #191302;
+  margin-bottom: 0;
+}
+
+.text-align-left {
+  text-align: left !important;
+}
+
+.extra-bottom-padding {
+  padding-bottom: 50px !important;
+}
+
+.button {
+  width: 40%;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  color: #191302 !important;
+  border: 2px solid #191302;
+  border-radius: 15px;
+}
+
+.button:link,
+.button:visited {           
+  display: block;           
+  text-decoration: none;
+}
+
+.button:hover, .button:visited:hover {
+  color: #f6da92 !important;                /* light */
+  background-color: #191302;      /* dark */
+}
+
+.detail-link:hover, .detail-link:visited:hover {
+  color: #c49a10;
+}
+
+.button:active,
+.button:visited:active {
+  color: #F4E9E6;
+  background-color: #575270;  /* dusty blue */
+  border: 2px solid #575270;  /* dusty blue */
+}
+
+.large-image {
+  width: 50vw;
+}
+
+.med-image {
+  width: 33.3vw;
+}
+
+.small-image {
+  width: 20vw;
+  align-self: center;
+  padding: 10px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .feature-1,
+  .feature-2 {
+    width:100%;
+  }
+  
+  .item-display {
+    width: 100%;
+  }
+  
+  .small-image {
+    width: 80%;
+  }
+  
+  .paragraph-large {
+    font-size: 1.2em;
+  
+  }
+  
+  .paragraph-med {
+    font-size: 1em;
+    
+  }
+  
+  .button {
+    font-size: 1em;
+    width: 80%;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .page {
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+  
+  .feature-1,
+  .feature-2 {
+    width: 50%;
+  }
+  
+  .item-display {
+    width: 40%;
+  }
+  
+  .paragraph-large {
+    font-size: 1.2em;
+  }
+  
+  .paragraph-med {
+    font-size: 1em;
+  }
+  
+  .button {
+    font-size: 1em;
+    width: 80%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+  
+  .feature-1,
+  .feature-2 {
+    width: 50%;
+  }
+  
+  .feature-3 {
+    width: 40%;
+  }
+ 
+  .item-display {
+    width: 20%;
+  }
+
+}
